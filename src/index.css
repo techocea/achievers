@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.title,
+footer h1,
+.about h4,
+.usa h4,
+.footer-p {
+  font-family: "Crimson Text", serif;
+}
+
+.br h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 48px;
+  color: beige;
+}
+
+.span {
+  font-size: 46px;
+}
+
+input[type="text"],
+input[type="email"],
+option {
+  @apply rounded-full py-2 px-3 outline-sky-800 border border-sky-500 w-[300px];
+}
+
+.form>div {
+  @apply w-[480px] justify-between;
+}
+
+@media not all and (min-width: 440px) {
+  .form>div {
+    @apply w-[30px];
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .grid1 {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .ggrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .br h2 {
+    font-family: "Crimson Text", serif;
+    font-size: 28px;
+    color: beige;
+  }
+}
+
+.grid1 img {
+  border-radius: 15px;
+  width: 450px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.section p {
+  font-family: "Sriracha", cursive;
+}
+
+.big p {
+  font-size: 22px;
+}
