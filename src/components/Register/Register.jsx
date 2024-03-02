@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Popup from "../Popup/Popup";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 const Register = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

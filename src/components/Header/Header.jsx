@@ -122,28 +122,3 @@ const Header = () => {
 };
 
 export default Header;
-
-{
-  /* <div onClick={handleNav} className="cursor-pointer md:hidden">
-          {!nav ? (
-            <TiTimes size={45} className="text-white z-[100]" />
-          ) : (
-            <HiBars3 size={45} className="text-white" />
-          )}
-          <div
-            className={
-              !nav
-                ? "bg-black fixed z-[16] h-full left-0 top-0 w-[67%] ease-in duration-500"
-                : "fixed left-[-100%]"
-            }
-          >
-            
-          </div>
-        </div>
-      </sidebar>
-    </>
-  );
-};
-
-export default Header; */
-}

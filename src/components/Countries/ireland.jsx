@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header2 from "../Header/Header2";
 import Footer from "../Footer/Footer";
 
 
@@ -15,7 +14,7 @@ const Ireland = () => {
   return (
     <>
       <div className="relative">
-        <Header2 />
+        
       </div>
       <section className="bg-gray-300/100 py-8 border rounded-lg flex flex-col justify-center">
         <React.Fragment key={item.id}>

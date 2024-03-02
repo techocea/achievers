@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import videoBg from "../../assets/video/bgvideo.mp4";
-import Header from "../Header/Header";
 import Intro from "../Intro/Intro";
 
 const Video = () => {

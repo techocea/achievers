@@ -1,4 +1,4 @@
-import React, { } from "react";
+import React from "react";
 import abtImg from "../../assets/about-img.jpg"
 import one from "../../assets/covers/one.png";
 import two from "../../assets/covers/two.png";
@@ -40,7 +40,7 @@ const About = () => {
         </p>
       </div>
       <div className="h-full pb-20  max-md:p-8">
-      <h1 className="text-[16px] pl-10 font-bold mb-2">WHY US</h1>
+      <h1 className="text-[16px] pl-10 lg:pl-52 font-bold mb-2">WHY US</h1>
         <div
           className="h-full flex flex-col gap-20 max-md:mx-10"
         >
