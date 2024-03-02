@@ -23,8 +23,8 @@ const About = () => {
         </div>
       </div>
       <div className="">
-      <div className="h-full flex flex-col items-start text-start p-10 lg:px-52 max-md:p-8">
-        <h1 className="text-[16px] font-bold mb-2">ABOUT US</h1>
+      <div className="h-full flex flex-col p-10 pb-0 lg:px-52 max-md:p-8">
+        <h1 className="text-[16px] text-center font-bold mb-2.5">ABOUT US</h1>
         <p className="max-md:text-xl w-auto lg:text-[20px]">
           Welcome to Negombo Smart Achievers,
           where dreams take flight. Established in 2022, in the picturesque
@@ -39,14 +39,14 @@ const About = () => {
           We first understand your education and career goals and then provide you with the proper guidance. Here’s why you need to speak with us:
         </p>
       </div>
-      <div className="h-full pb-20  max-md:p-8">
+      <div className="h-full py-20  max-md:p-8">
       <h1 className="text-[16px] pl-10 lg:pl-52 font-bold mb-2">WHY US</h1>
         <div
-          className="h-full flex flex-col gap-20 max-md:mx-10"
+          className="h-full flex flex-col gap-y-20 max-md:mx-10"
         >
           <div className="flex gap-20 px-10 lg:px-52 items-start w-full">
             <p className="text-[16px] lg:text-[20px] w-1/2">
-              <span className="font-medium text-2xl text-[#46145e] ">Career Objective Analysis and Course Selection</span><br /><br />
+              <span className="font-medium text-2xl text-[#46145e] w-1/2">Career Objective Analysis and Course Selection</span><br /><br />
               We begin by understanding your career objectives. By identifying
               your goals, we can tailor our guidance to ensure your education
               abroad aligns perfectly with your aspirations. <br /><br />

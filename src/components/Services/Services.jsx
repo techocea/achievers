@@ -1,28 +1,33 @@
-import React, { useEffect } from "react";
+import React, {  } from "react";
 import serv from "../../assets/services.jpg";
 const Services = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  
   return (
     <>
       <div className="h-[500px] relative max-md:w-full ">
-
         <img
           src={serv}
-          alt=""
+          alt="serv"
           className="brightness-50 z-[-10] absolute top-0 left-0 w-full h-full object-cover"
         />
+        <div className="absolute inset-0 opacity-80 bg-gradient-to-r from-[#432BB3] via-[#7143C0] to-[#AC5FCF] h-full"></div>
+        <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 max-md:bottom-6 items-center flex flex-col max-md:p-5">
+          <div className="flex flex-col gap-3 text-center">
+          <h4 className="leading-[46px] max-md:leading-normal text-[32px] lg:text-4xl max-md:text-[28px] text-white font-bold flex-wrap max-md:w-full text-center">
+          Providing you the pathway to excellence
+          </h4>
+          <p className="text-white font-medium text-lg">Empower yourself with a seamless shift from school to university through our dedicated overseas education counseling. </p>
+          </div>
+        </div>
       </div>
       <main className="bg-slate-200 m-0">
         <section className="p-10 lg:p-20 max-md:p-12 flex flex-col gap-10 lg:gap-20 ">
           <h1 className="text-[#46145e] font-bold capitalize text-center text-4xl lg:text-5xl max-md:text-center max-md:text-4xl">
             our services at negombo smart achievers
           </h1>
-          <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:gap-20 gap-8 lg:gap-10 items-center justify-center">
+          <div className="grid grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 max-md:gap-20 gap-8 lg:gap-10 items-center justify-center">
             <div className="bg-white h-full w-full border rounded-xl shadow-lg">
-              <p className="lg:text-3xl max-md:text-xl p-4 text-center leading-8 text-xl lg:leading-[50px]">
+              <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <p className="font-bold text-[#46145e]  uppercase">
                   "All you need is an asset,we take care of the rest"
                 </p>
@@ -34,7 +39,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="text-[#46145e] font-bold ">
                   Admission Guidance
                 </span>
@@ -48,10 +53,9 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px]">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="font-bold text-[#46145e]">
-                  {" "}
-                  Visa Assistance{" "}
+                  Visa Assistance
                 </span>
                 <br />
                 Our qualified visa officers will give you step by step guidance
@@ -62,7 +66,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="text-[#46145e] font-bold">
                   Pre Departure Assistance
                 </span>
@@ -73,7 +77,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="font-bold text-[#46145e]"> IELTS & PTE </span>
                 <br />
                 We have a team of experts who can guide you in obtaining your
@@ -82,7 +86,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="text-[#46145e] font-bold leading-8 text-xl lg:leading-[4rem] ">
                   {" "}
                   Air Tickets{" "}
@@ -95,7 +99,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="font-bold text-[#46145e]">
                   Vehicle Financing
                 </span>
@@ -111,7 +115,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white h-full w-full border rounded-xl shadow-lg ">
-              <p className="lg:text-3xl max-md:text-xl p-8 leading-8 text-xl lg:leading-[50px] text-slate-800">
+            <p className="text-[16px] lg:text-xltext-lg p-4 text-center leading-8 ">
                 <span className="text-[#46145e] font-bold">Accommodation</span>
                 <br /> At Negombo Smart Achievers we understand that moving to a
                 new country is a challenge. We are happy to take this burden off
@@ -129,3 +133,10 @@ const Services = () => {
 };
 
 export default Services;
+//FaUniversity 
+//FaPassport 
+//BiSolidPlane
+//FaFileAlt 
+//MdOutlineAirplaneTicket
+//FaCarSide
+//ImHome
