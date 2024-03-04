@@ -39,6 +39,13 @@ import emu from "././assets/emu.png";
 import greenwich from "././assets/greenwich.png";
 import bristol from "././assets/bristol.png";
 import { FaUniversity } from "react-icons/fa";
+
+import { FaPassport } from "react-icons/fa";
+import { BiSolidPlane } from "react-icons/bi";
+import { MdOutlineAirplaneTicket } from "react-icons/md";
+import { FaCarSide } from "react-icons/fa";
+import { ImHome } from "react-icons/im";
+
 export {
   lm,
   rmit,
@@ -521,14 +528,47 @@ export const AustraliaBenefits = [
       "American institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the USA offer a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
   },
 ];
-export const ServiceData = {
-  id: 1,
-  heading: "Admission Guidance",
-  icon: FaUniversity,
-  points: [
-    " We handle the application process for you",
-    "We secure your acceptance letter hassle-free",
-    "Navigate fee payments with our expert guidance",
-    "We provide the key to your successful visa application",
-  ],
-};
+export const ServiceData = [
+  {
+    id: 1,
+    heading: "Admission Guidance",
+    icon: FaUniversity,
+    description:
+      "Our skilled counselors will guide you through the university admission process, applying on your behalf and securing the offer letter. We'll assist with fee payment and provide the necessary visa application documentation once you receive the offer letter.",
+  },
+  {
+    id: 2,
+    heading: "Visa Assistance",
+    icon: FaPassport,
+    description:
+      "Our visa officers will guide you through the application process step by step. Receive a checklist, prepare your documents, and upon completion, we'll apply for your visa.",
+  },
+  {
+    id: 3,
+    heading: "Pre Departure Assistance",
+    icon: BiSolidPlane,
+    description:
+      "After realizing your dream, we ensure a seamless transition with final document checks, airport transport, and assistance with air tickets.",
+  },
+  {
+    id: 4,
+    heading: "Air Tickets",
+    icon: MdOutlineAirplaneTicket,
+    description:
+      "We can assist you in purchasing air tickets to your desired destination at special rates through reputable travel agents. Get the best price with us!",
+  },
+  {
+    id: 5,
+    heading: "Vehicle Financing",
+    icon: FaCarSide,
+    description:
+      "Overseas student? Getting a bank loan for your vehicle might seem impossible, but don't worry – we've got you covered. We can make arrangements to secure the funds you need. Let's make your vehicle dreams a reality!",
+  },
+  {
+    id: 6,
+    heading: "Accommodation",
+    icon: ImHome,
+    description:
+      "At Negombo Smart Achievers, we simplify your move to a new country. Once your visa is approved, our dedicated team will assist you in finding accommodation for a smooth and hassle-free transition.",
+  },
+];
