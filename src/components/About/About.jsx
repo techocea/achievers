@@ -24,7 +24,7 @@ const About = () => {
       </div>
       <div className="">
       <div className="h-full flex flex-col p-10 pb-0 lg:px-52 max-md:p-8">
-        <h1 className="text-[16px] text-center font-bold mb-2.5">ABOUT US</h1>
+        <h1 className="text-[16px] text-[#000080] text-center font-bold mb-2.5">ABOUT US</h1>
         <p className="max-md:text-xl w-auto lg:text-[20px]">
           Welcome to Negombo Smart Achievers,
           where dreams take flight. Established in 2022, in the picturesque
@@ -40,7 +40,7 @@ const About = () => {
         </p>
       </div>
       <div className="h-full py-20  max-md:p-8">
-      <h1 className="text-[16px] pl-10 lg:pl-52 font-bold mb-2">WHY US</h1>
+      <h1 className="text-[16px] text-[#000080] pl-10 lg:pl-52 font-bold mb-2">WHY US</h1>
         <div
           className="h-full flex flex-col gap-y-20 max-md:mx-10"
         >
