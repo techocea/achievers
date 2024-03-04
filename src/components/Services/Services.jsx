@@ -1,6 +1,7 @@
 import React from "react";
 import serv from "../../assets/services.jpg";
-import { FaUniversity } from "react-icons/fa";
+import { ServiceData } from "../../data";
+
 const Services = () => {
   return (
     <>
@@ -28,9 +29,9 @@ const Services = () => {
           <h1 className="text-[#46145e] font-bold capitalize text-center text-4xl lg:text-5xl max-md:text-center max-md:text-4xl">
             our services at negombo smart achievers
           </h1>
-          <div className="grid grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 max-md:gap-20 gap-8 lg:gap-10 items-center justify-center">
+          {/* <div className="grid grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 max-md:gap-20 gap-8 lg:gap-10 items-center justify-center">
             <div className="bg-white h-full w-full border rounded-xl shadow-lg">
-              <p className="text-[16px] lg:text-lg p-4 text-center leading-8 ">
+            <p className="text-[16px] lg:text-lg p-4 text-center leading-8 ">
                 <p className="font-bold text-[#46145e]  uppercase">
                   "All you need is an asset,we take care of the rest"
                 </p>
@@ -129,12 +130,12 @@ const Services = () => {
                 you settle down when you move.
               </p>
             </div>
-          </div>
+  </div> */}
         </section>
       </main>
-    </>
   );
 };
+    </>
 
 export default Services;
 //FaUniversity

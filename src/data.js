@@ -38,7 +38,7 @@ import ucc from "././assets/ucc.png";
 import emu from "././assets/emu.png";
 import greenwich from "././assets/greenwich.png";
 import bristol from "././assets/bristol.png";
-
+import { FaUniversity } from "react-icons/fa";
 export {
   lm,
   rmit,
@@ -70,7 +70,6 @@ export {
   irish,
   consult,
 };
-
 export const Countries = [
   {
     id: 1,
@@ -249,7 +248,6 @@ export const Countries = [
     ],
   },
 ];
-
 export const Finances = {
   array: [
     {
@@ -297,7 +295,6 @@ export const Finances = {
     },
   ],
 };
-
 export const Universities = [
   {
     id: 1,
@@ -372,7 +369,6 @@ export const Universities = [
     websiteUrl: "https://www.gre.ac.uk/",
   },
 ];
-
 export const UKBenefits = [
   {
     id: 1,
@@ -525,3 +521,14 @@ export const AustraliaBenefits = [
       "American institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the USA offer a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
   },
 ];
+export const ServiceData = {
+  id: 1,
+  heading: "Admission Guidance",
+  icon: FaUniversity,
+  points: [
+    " We handle the application process for you",
+    "We secure your acceptance letter hassle-free",
+    "Navigate fee payments with our expert guidance",
+    "We provide the key to your successful visa application",
+  ],
+};
