@@ -1,13 +1,12 @@
-import About from "./components/About/About";
+import About from "./pages/About/About";
 import Usa from "./components/Countries/usa";
 import UnitedKingdom from "./components/Countries/unitedKingdom";
 import Australia from "./components/Countries/australia";
 import Canada from "./components/Countries/canada";
 import Ireland from "./components/Countries/ireland";
 import Italy from "./components/Countries/italy";
-import Services from "./components/Services/Services";
-import Financial from "./components/Financial/Financial";
-import Contact from "./components/Contact/Contact";
+import Services from "./pages/Services/Services";
+import Financial from "./pages/Financial/Financial";
 import Register from "./components/Register/Register";
 
 export {
@@ -20,6 +19,5 @@ export {
   Italy,
   Services,
   Financial,
-  Contact,
   Register,
 };

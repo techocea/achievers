@@ -1,21 +1,9 @@
-import uk from "./assets/uk-1.jpg";
-import usa from "././assets/usa-1.jpg";
 import ireland from "././assets/ireland-1.jpg";
-import canada from "././assets/canada-1.jpg";
-import australia from "././assets/australia-1.jpg";
-//home page images`s links
-import cons from "././assets/consulting.jpg";
-import uni from "././assets/uni.jpg";
-import bank from "././assets/bank.jpg";
-import grad from "././assets/grad.jpg";
 
+//home page images`s links
 import Australia from "././assets/australia.jpg";
-import Canada from "././assets/Canada.jpg";
-import Uk from "././assets/UK.jpg";
-import Usa from "././assets/USA.jpg";
 import Ireland from "././assets/ireland-1.jpg";
 import Italy from "././assets/italy.jpg";
-
 import Aflag from "././assets/ausi-flag.jpg";
 import Cflag from "././assets/canada-flag.jpg";
 import Ukflag from "././assets/UK-flag.jpg";
@@ -23,23 +11,14 @@ import Usaflag from "././assets/usa-flag.jpg";
 import irish from "././assets/irish-flag.jpg";
 import Itflag from "././assets/italian-flag-.png";
 
-import consult from "././assets/consulting.jpg";
-
 //university logos
 import lm from "././assets/Lm.png";
 import rmit from "././assets/rmit.png";
 import deakin from "././assets/deakin.png";
-import algoma from "././assets/algoma.png";
-import jbu from "././assets/jbu.webp";
-import claire from "././assets/claire.jpg";
-import dublin from "././assets/dublin.png";
 import monash from "././assets/monash.png";
-import ucc from "././assets/ucc.png";
-import emu from "././assets/emu.png";
 import greenwich from "././assets/greenwich.png";
-import bristol from "././assets/bristol.png";
-import { FaUniversity } from "react-icons/fa";
 
+import { FaUniversity } from "react-icons/fa";
 import { FaPassport } from "react-icons/fa";
 import { BiSolidPlane } from "react-icons/bi";
 import { MdOutlineAirplaneTicket } from "react-icons/md";
@@ -50,141 +29,23 @@ export {
   lm,
   rmit,
   deakin,
-  algoma,
-  jbu,
-  claire,
-  dublin,
   monash,
-  ucc,
-  emu,
+ 
   greenwich,
-  bristol,
-  cons,
-  uni,
-  bank,
-  grad,
+  
   Australia,
   Italy,
   Itflag,
-  Canada,
-  Uk,
-  Usa,
   Ireland,
   Aflag,
   Cflag,
   Ukflag,
   Usaflag,
   irish,
-  consult,
 };
 export const Countries = [
   {
     id: 1,
-    imageUrl: australia,
-    heading: "Why Study In Australia",
-    country: "Australia",
-    details:
-      "is one of the most sort out destination that students choose when wanting to peruse their higher education. They maintain a very diversified multi cultural environment and are very welcoming. Australia has pristine beaches,rainforests,deserts as well as vibrant cities.Once again students have the opportunity to work and study. They may be eligible to apply forpermanent residency once they have completed their degree.",
-    advantage: "The Australian Advantage",
-    advantageLists: [
-      {
-        title: " University Ranking and Reputation",
-        description:
-          "Australian universities are ranked among the best university around the world. They are well known for their strength in research, employer reputation and infrastructure . There are many universities in Australia that are ranked amongst the top 100 universities in the world.",
-      },
-
-      {
-        title: " Scholarship For International Students",
-        description:
-          "Students are offered several merit scholarships. The Australian Government offers approximately 200 million with of scholarships international students.All students who wish to apply we will be more than happy to assist with.",
-      },
-      {
-        title: "Post Study Visa",
-        description:
-          "All graduates are privileged to apply for a post study via once they complete their studies.This will allow them to work for wither 2-4 years in the country(Subclass 485) ",
-      },
-    ],
-  },
-  {
-    id: 2,
-    imageUrl: canada,
-    heading: "Why Study In Canada",
-    country: "Canada",
-    details:
-      "situated in the heart of North America, Canada stands as the second- largest country in the world, its vast landscape stretching from the Atlantic Ocean in the east to the Pacific Ocean in the west.Bordered by the United States of America to the south and the US state of Alaska to the North - West, Canada boasts not only stunning natural beauty but also a reputation for world - class education.",
-    advantage: "The Canadian Advantage",
-    advantageLists: [
-      {
-        title: "Pathway to Permanent Residency",
-        description:
-          " One of the most significant advantages of studying in Canada is the opportunity it provides for international students to pursue permanent residency.Upon completing your degree, you can apply for various immigration programs, making Canada your long- term home.",
-      },
-      {
-        title: "Quality Education",
-        description:
-          "Canada is renowned for its high-quality education system. The country consistently ranks among the top in global education rankings, with institutions that maintain rigorous academic standards and offer a wide array of programs.",
-      },
-      {
-        title: "Diversity and Inclusion",
-        description:
-          "Canada is celebrated for its multicultural society and welcoming atmosphere.International students from all corners of the world find a warm and inclusive community that embraces diversity.",
-      },
-    ],
-  },
-  {
-    id: 3,
-    imageUrl: usa,
-    heading: " Why Study In The United States",
-    country: "The United States Of America",
-    details:
-      "comprises of 48 states and occupies a mid-continent of Alaska in North America and the beautiful island of Hawaii.The capital being Washington DC, America shares a very diverse culture and warmly welcomes foreigners.Itthe third largest country in the world by both land and total area.’s",
-    advantage: "The American Advantage",
-    advantageLists: [
-      {
-        title: "Academic Excellence",
-        description:
-          "USA has some of the best word renounce universities. They have maintained their standards by being consistent.",
-      },
-      {
-        title: "Advanced Technology",
-        description:
-          "is one of the leaders in innovation and technology across the world.Research has shown that the country ranks 4 th out of 78 countries in the world.",
-      },
-      {
-        title: " Rich Diversity Of Food Culture",
-        description:
-          "American culture is influenced heavily by both immigrant and indigenous cultures.This will make it easy for you to blend into the new way of life and enjoy both your academic and social life.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    imageUrl: uk,
-    heading: "Why Study In The United Kingdom",
-    country: "The United Kingdom",
-    details:
-      "stands out as a top destination for higher education across the globe.It comprises of Northern Ireland, Scotland & amp; Wales. Many international students fancy studying in the United Kingdom due to the following reasons listed below Amazing Academic Reputation – The UK has some the worlds most oldest universities namely Oxford and Cambridge both that carries a history of over 800 years. 16 % of the worlds top universities is in the United  Kingdom",
-    advantage: "The British Advantage",
-    advantageLists: [
-      {
-        title: "Welcoming Culture",
-        description:
-          "Australian universities are ranked among the best university around the world. They are well known for their strength in research, employer reputation and infrastructure . There are many universities in Australia that are ranked amongst the top 100 universities in the world,Nursing,Law",
-      },
-      {
-        title: "Broader Choice Of Degrees",
-        description:
-          " The UK has a wide range of degrees that they offer.Specially Engineering, Medicine,",
-      },
-      {
-        title: "Shorter degrees",
-        description:
-          "The UK usually has shorter degrees. An undergraduate degree takes 3 years if you study fulltime and a master takes 1 year.",
-      },
-    ],
-  },
-  {
-    id: 5,
     imageUrl: ireland,
     heading: "Why Study In Ireland",
     country: "Ireland",
@@ -210,7 +71,7 @@ export const Countries = [
     ],
   },
   {
-    id: 6,
+    id: 2,
     imageUrl: Italy,
     heading: "Why Study In Italy",
     country: "Italy",
@@ -322,52 +183,10 @@ export const Universities = [
     websiteUrl: "https://www.deakin.edu.au/",
   },
   {
-    id: 4,
-    name: "University algoma",
-    imageUrl: algoma,
-    websiteUrl: "https://algomau.ca/",
-  },
-  {
-    id: 5,
-    name: "University jbu",
-    imageUrl: jbu,
-    websiteUrl: "https://www.jbu.edu/",
-  },
-  {
-    id: 6,
-    name: "University canuni",
-    imageUrl: claire,
-    websiteUrl: "https://www.stclaircollege.ca/",
-  },
-  {
-    id: 7,
-    name: "University dublin",
-    imageUrl: dublin,
-    websiteUrl: "https://www.ucd.ie/",
-  },
-  {
-    id: 8,
-    name: "University ucc",
-    imageUrl: ucc,
-    websiteUrl: "https://www.ucc.ie/",
-  },
-  {
     id: 9,
     name: "University monash",
     imageUrl: monash,
     websiteUrl: "https://www.monash.edu/",
-  },
-  {
-    id: 10,
-    name: "University emu",
-    imageUrl: emu,
-    websiteUrl: "https://www.emich.edu/",
-  },
-  {
-    id: 11,
-    name: "University bristol",
-    imageUrl: bristol,
-    websiteUrl: "https://www.uwe.ac.uk/",
   },
   {
     id: 12,

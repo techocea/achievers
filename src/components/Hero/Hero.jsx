@@ -1,27 +1,10 @@
 import React, { useEffect } from "react";
-import {
-  cons,
-  uni,
-  bank,
-  grad,
-  Australia,
-  Italy,
-  Itflag,
-  Canada,
-  Uk,
-  Usa,
-  Ireland,
-  Aflag,
-  Cflag,
-  Ukflag,
-  Usaflag,
-  irish,
-  consult,
-} from "../../data";
+
 
 import WhatsAppChatButton from "../WhatsappChat/WhatsappChat";
 import { Link } from "react-router-dom";
 import { Universities } from "../../data"
+import Button from "../../button/Button";
 const Hero = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,58 +12,38 @@ const Hero = () => {
 
   return (
     <>
-      <main className="pb-10 h-full max-md:w-full bg-[#F5F4FF]">
-        <h1 className="p-8 max-md:p-4 font-bold text-3xl max-md:text-2xl lg:text-4xl lg:pt-10 lg:pl-16">
-          With you at every step - from one point to another...
-        </h1>
-
-        <div className="relative flex justify-center items-center m-8">
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-16 relative ">
-            <div className="w-[550px] lg:w-[670px] max-md:w-[330px]">
-              <img src={cons} alt="" className="brightness-100" />
-              <p className="font-bold text-center text-3xl max-md:text-[22px] lg:text-4xl py-4">
-                Career Guidance
-              </p>
-              <p className="max-md:p-0 text-justify text-slate-900 lg:text-2xl max-md:text-[18px]">
-                Our guidance is personalized to your specific needs, ensuring
-                that you receive the most relevant and beneficial advice and
-                assistance throughout your entire study abroad process.
-              </p>
-            </div>
-            <div className="w-[550px] lg:w-[670px] max-md:w-[330px]">
-              <img src={uni} alt="" className="brightness-100" />
-              <p className="font-bold text-center text-3xl max-md:text-[22px] lg:text-4xl py-4">
-                University Admission
-              </p>
-              <p className="max-md:p-0 text-justify text-slate-900 lg:text-2xl max-md:text-[18px]">
-                Our team assists you in applying to universities that offer your
-                chosen course, making sure you have the best options available.
-              </p>
-            </div>
-            <div className="w-[550px] lg:w-[670px] max-md:w-[330px]">
-              <img src={bank} alt="" className="brightness-100" />
-              <p className="font-bold text-center text-3xl max-md:text-[22px] lg:text-4xl py-4">
-                Financial Supporting
-              </p>
-              <p className="max-md:p-0 text-justify text-slate-900 lg:text-2xl max-md:text-[18px]">
-                If required, we can help you explore financial assistance
-                options, making it easier to cover tuition fees, accommodation
-                costs, and other essential expenses.
-              </p>
-            </div>
-            <div className="w-[550px] lg:w-[670px] max-md:w-[330px]">
-              <img src={grad} alt="" className="brightness-100" />
-              <p className="font-bold text-center text-3xl max-md:text-[22px] lg:text-4xl py-4">
-                Graduation
-              </p>
-              <p className="max-md:p-0 text-justify text-slate-900 lg:text-2xl max-md:text-[18px]">
-                University graduation is a momentous occasion that marks the
-                culmination of years of dedication and hard work.
-              </p>
-            </div>
+<div className="w-full h-[500px] relative max-md:w-full">
+        <div className="absolute inset-0 opacity-80 bg-gradient-to-r from-[#432BB3] via-[#7143C0] to-[#AC5FCF] h-full"></div>
+        <div className=" absolute left-10 top-1/3  max-md:bottom-6 items-center flex justify-between w-auto max-md:p-5">
+          <div className="flex flex-col gap-3 text-left">
+          <h4 className="leading-[60px] w-[650px] max-md:leading-normal text-[52px] max-md:text-[28px] text-white font-bold flex-wrap max-md:w-full ">
+            Here`s your chance to study in the top countries in the world 
+          </h4>
+          <div className="flex gap-3">
+            <Button subject="Australia"/>
+            <Button subject="USA"/>
+            <Button subject="Canada"/>
+            <Button subject="UK"/>
           </div>
         </div>
-      </main>
+          <div className="w-auto relative">
+            {/* img0 */}
+            <div className="bg-white shadow-lg w-auto text-black p-1.5">
+              <p><strong>97%</strong>Visa Success rate</p>
+            </div>
+            <div className="bg-white shadow-lg w-auto text-black p-1.5">
+              <p><strong>97%</strong>Visa Success rate</p>
+            </div>
+            <div className="bg-white shadow-lg w-auto text-black p-1.5">
+              <p><strong>97%</strong>Visa Success rate</p>
+            </div>
+            <div className="bg-white shadow-lg w-auto text-black p-1.5">
+              <p><strong>97%</strong>Visa Success rate</p>
+            </div>
+            </div>  
+           </div>
+      </div>
+     
       <main className="h-full w-full max-md:w-screen bg-white py-20 flex flex-col max-md:flex-col  ">
         <h2 className="text-center max-md:text-left pb-8 font-bold text-3xl">
           EXPLORE UNIVERSITIES AROUND THE GLOBE
@@ -92,124 +55,7 @@ const Hero = () => {
               <span className="text-teal-500 font-bold">destination</span>
               &nbsp;would be..
             </h2>
-            <div className="">
-              <div className="grid grid-cols-3 max-md:grid-cols-1 gap-16 max-md:gap-16 justify-center items-center">
-                <div className="relative card  bg-inherit border-0">
-                  <Link to="/australia">
-                    <img
-                      src={Australia}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute right-4 max-md:right-0 bottom-10 card-body">
-                    <img
-                      src={Aflag}
-                      alt=""
-                      className="rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="text-2xl text-center font-bold pt-6">
-                    Australia
-                  </p>
-                </div>
-                <div className="relative card  bg-inherit border-0">
-                  <Link to="/canada">
-                    <img
-                      src={Canada}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute right-4 max-md:right-0 bottom-10 card-body">
-                    <img
-                      src={Cflag}
-                      alt=""
-                      className="  rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="w-full text-2xl text-center font-bold pt-6">
-                    Canada
-                  </p>
-                </div>
-                <div className="relative card  bg-inherit border-0">
-                  <Link to="/united-kingdom">
-                    <img
-                      src={Uk}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute right-4 max-md:right-0  bottom-10 card-body">
-                    <img
-                      src={Ukflag}
-                      alt=""
-                      className="  rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="text-2xl text-center font-bold pt-6">
-                    United Kingdom
-                  </p>
-                </div>
-                <div className="relative card mt-8 bg-inherit border-0">
-                  <Link to="/usa">
-                    <img
-                      src={Usa}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute  right-4 max-md:right-0  bottom-10 card-body">
-                    <img
-                      src={Usaflag}
-                      alt=""
-                      className="rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="text-2xl text-center font-bold pt-6">
-                    The United States
-                  </p>
-                </div>
-                <div className="relative card  mt-8 bg-inherit border-0">
-                  <Link to="/italy">
-                    <img
-                      src={Italy}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute right-4 max-md:right-0  bottom-10 card-body ">
-                    <img
-                      src={Itflag}
-                      alt=""
-                      className="  rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="w-full text-2xl text-center font-bold pt-6">
-                    Italy
-                  </p>
-                </div>
-                <div className="relative card  mt-8 bg-inherit border-0">
-                  <Link to="/ireland">
-                    <img
-                      src={Ireland}
-                      alt=""
-                      className="hover:brightness-75 w-[250px] lg:w-[300px] lg:h-[300px] h-[260px] object-cover max-md:w-[300px] rounded-3xl "
-                    />
-                  </Link>
-                  <div className="absolute right-4 max-md:right-0  bottom-10 card-body ">
-                    <img
-                      src={irish}
-                      alt=""
-                      className="rounded-full w-[50px] h-[50px] object-cover"
-                    />
-                  </div>
-                  <p className="w-full text-2xl text-center font-bold pt-6">
-                    Northern Ireland
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* //// */}
           </div>
         </div>
       </main>
@@ -241,7 +87,7 @@ const Hero = () => {
           CONSULTATION NOW
         </h2>
         <div className="flex max-md:flex-col justify-center items-center gap-[50px] lg:gap-[75px] mx-[5rem] max-md:mx-10">
-          <img src={consult} alt="" className="w-[400px]" />
+         
           <div className="flex flex-col justify-between gap-8 ">
             <h2 className="font-bold text-3xl max-md:text-3xl max-md:text-left">
               CONSULT WITH THE

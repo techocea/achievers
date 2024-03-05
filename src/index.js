@@ -13,7 +13,7 @@ import {
   Italy,
   Services,
   Financial,
-  Contact,
+ 
   Register,
 } from "././Imports";
 import Header from "./components/Header/Header";
@@ -28,7 +28,7 @@ root.render(
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/financial" element={<Financial />} />
-      <Route path="/contact" element={<Contact />} />
+      
       <Route path="/register" element={<Register />} />
       <Route path="/usa" element={<Usa />} />
       <Route path="/united-kingdom" element={<UnitedKingdom />} />

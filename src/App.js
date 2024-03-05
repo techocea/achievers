@@ -1,12 +1,10 @@
+import Features from "./components/Features/Features";
 import Hero from "./components/Hero/Hero";
-import Video from "./components/Video/Video";
-
 function App() {
   return (
     <>
-      <Video />
       <Hero />
-      {/* //About */}
+      <Features/>
       {/* //countries  */}
       {/* //services */}
       {/* //contact */}
