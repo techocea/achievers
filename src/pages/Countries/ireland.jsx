@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import Footer from "../Footer/Footer";
-
 
 import { Countries } from "../../data";
 
@@ -13,9 +11,7 @@ const Ireland = () => {
 
   return (
     <>
-      <div className="relative">
-        
-      </div>
+      <div className="relative"></div>
       <section className="bg-gray-300/100 py-8 border rounded-lg flex flex-col justify-center">
         <React.Fragment key={item.id}>
           <div className="flex text-center items-center justify-center">
@@ -59,7 +55,6 @@ const Ireland = () => {
           </div>
         </React.Fragment>
       </section>
-      <Footer />
     </>
   );
 };

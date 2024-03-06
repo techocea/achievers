@@ -1,17 +1,16 @@
-import React from 'react'
-
+import React from "react";
+import Slider from "../Slider/Slider";
 function Features() {
   return (
     <div>
-         <main className="pb-10 h-full max-md:w-full bg-[#F1F5F9]">
-        <h1 className="text-[#8D8D8D] p-8 max-md:p-4 font-bold text-3xl max-md:text-2xl lg:text-4xl lg:pt-10 lg:pl-16">
-         FEATURED UNIVERSITIES
+      <main className="py-10 h-full max-md:w-full bg-[#F1F5F9]">
+        <h1 className="text-[#8D8D8D] max-md:p-4 font-bold text-[28px] text-center max-md:text-2xl">
+          FEATURED UNIVERSITIES
         </h1>
-        
-        
+        <Slider />
       </main>
     </div>
-  )
+  );
 }
 
-export default Features
+export default Features;

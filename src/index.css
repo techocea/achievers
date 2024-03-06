@@ -27,18 +27,22 @@ footer h1,
   font-size: 46px;
 }
 
+.custom__border {
+  border-radius: 10px 10px 200px 10px;
+}
+
 input[type="text"],
 input[type="email"],
 option {
   @apply rounded-full py-2 px-3 outline-sky-800 border border-sky-500 w-[300px];
 }
 
-.form>div {
+.form > div {
   @apply w-[480px] justify-between;
 }
 
 @media not all and (min-width: 440px) {
-  .form>div {
+  .form > div {
     @apply w-[30px];
   }
 }

@@ -12,10 +12,10 @@ import irish from "././assets/irish-flag.jpg";
 import Itflag from "././assets/italian-flag-.png";
 
 //university logos
-import lm from "././assets/Lm.png";
+// import lm from "././assets/Lm.png";
 import rmit from "././assets/rmit.png";
 import deakin from "././assets/deakin.png";
-import monash from "././assets/monash.png";
+// import monash from "././assets/monash.png";
 import greenwich from "././assets/greenwich.png";
 
 import { FaUniversity } from "react-icons/fa";
@@ -25,14 +25,18 @@ import { MdOutlineAirplaneTicket } from "react-icons/md";
 import { FaCarSide } from "react-icons/fa";
 import { ImHome } from "react-icons/im";
 
+import guidance from "././assets/guidance.jpg";
+import visa from "././assets/visa.jpg";
+import departure from "././assets/departure.jpg";
+import tickets from "././assets/tickets.jpg";
+import vehicle from "././assets/vehicle.jpg";
+import accomodation from "././assets/accomodation.jpg";
 export {
-  lm,
+  // lm,
   rmit,
   deakin,
-  monash,
- 
+  // monash,
   greenwich,
-  
   Australia,
   Italy,
   Itflag,
@@ -164,12 +168,12 @@ export const Finances = {
   ],
 };
 export const Universities = [
-  {
-    id: 1,
-    name: "University lm",
-    imageUrl: lm,
-    websiteUrl: "https://www.londonmet.ac.uk/",
-  },
+  // {
+  //   id: 1,
+  //   name: "University lm",
+  //   imageUrl: lm,
+  //   websiteUrl: "https://www.londonmet.ac.uk/",
+  // },
   {
     id: 2,
     name: "University rmit",
@@ -182,12 +186,12 @@ export const Universities = [
     imageUrl: deakin,
     websiteUrl: "https://www.deakin.edu.au/",
   },
-  {
-    id: 9,
-    name: "University monash",
-    imageUrl: monash,
-    websiteUrl: "https://www.monash.edu/",
-  },
+  // {
+  //   id: 9,
+  //   name: "University monash",
+  //   imageUrl: monash,
+  //   websiteUrl: "https://www.monash.edu/",
+  // },
   {
     id: 12,
     name: "University greenwich",
@@ -352,6 +356,7 @@ export const ServiceData = [
     id: 1,
     heading: "Admission Guidance",
     icon: FaUniversity,
+    image: guidance,
     description:
       "Our skilled counselors will guide you through the university admission process, applying on your behalf and securing the offer letter. We'll assist with fee payment and provide the necessary visa application documentation once you receive the offer letter.",
   },
@@ -359,6 +364,7 @@ export const ServiceData = [
     id: 2,
     heading: "Visa Assistance",
     icon: FaPassport,
+    image: visa,
     description:
       "Our visa officers will guide you through the application process step by step. Receive a checklist, prepare your documents, and upon completion, we'll apply for your visa.",
   },
@@ -366,6 +372,7 @@ export const ServiceData = [
     id: 3,
     heading: "Pre Departure Assistance",
     icon: BiSolidPlane,
+    image: departure,
     description:
       "After realizing your dream, we ensure a seamless transition with final document checks, airport transport, and assistance with air tickets.",
   },
@@ -373,6 +380,7 @@ export const ServiceData = [
     id: 4,
     heading: "Air Tickets",
     icon: MdOutlineAirplaneTicket,
+    image: tickets,
     description:
       "We can assist you in purchasing air tickets to your desired destination at special rates through reputable travel agents. Get the best price with us!",
   },
@@ -380,6 +388,7 @@ export const ServiceData = [
     id: 5,
     heading: "Vehicle Financing",
     icon: FaCarSide,
+    image: vehicle,
     description:
       "Overseas student? Getting a bank loan for your vehicle might seem impossible, but don't worry – we've got you covered. We can make arrangements to secure the funds you need. Let's make your vehicle dreams a reality!",
   },
@@ -387,6 +396,7 @@ export const ServiceData = [
     id: 6,
     heading: "Accommodation",
     icon: ImHome,
+    image: accomodation,
     description:
       "At Negombo Smart Achievers, we simplify your move to a new country. Once your visa is approved, our dedicated team will assist you in finding accommodation for a smooth and hassle-free transition.",
   },

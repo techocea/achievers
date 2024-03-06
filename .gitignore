@@ -22,8 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-//
-<div className="grid grid-cols-4 max-md:grid max-md:grid-cols-1 gap-4 max-md:gap-8">
+
             <input id="name" name="name" type="text" placeholder="Name" className="max-md:col-span-full col-span-2" required />
             <ValidationError
               prefix="Name"
