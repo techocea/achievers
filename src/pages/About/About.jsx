@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import abtImg from "../../assets/about-img.jpg"
 import one from "../../assets/covers/one.png";
 import two from "../../assets/covers/two.png";
 import three from "../../assets/covers/three.png";
 
 const About = () => {
- 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="w-full h-[500px] relative max-md:w-full">

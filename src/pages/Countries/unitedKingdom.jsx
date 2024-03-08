@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { UKBenefits } from "../../data";
 import Button from "../../button/Button";
 import ContactMessage from "../../contactMessage/contactMessage";
 import ukCover from "../../assets/covers/ukCover.png"
+import { Link } from "react-router-dom";
 
-
-function unitedKingdom() {
+function UnitedKingdom() {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const tableData1 = [
     {
       id: "1",
@@ -83,7 +86,10 @@ function unitedKingdom() {
           <h2 className=" text-white font-bold text-5xl">Your <span className="text-[#1F0259]">dream</span> of studying in <span className="text-[#1F0259]">UK</span>  is closer than you think!</h2>
           <p className="text-white text-lg font-medium">Learn everything you need to know about studying in UK and get end to end expert guidance from us.</p>
           <div>
+             <Link to="/register">
             <Button subject="Get Started For FREE" />
+            </Link>
+            
           </div>
         </div>
       </div>
@@ -159,7 +165,10 @@ function unitedKingdom() {
             <p className="font-poppins-thin-italic text-center text-[#1F0259] text-sm">
               Need to learn more about Applying to Study in the UK and all the benefits that you<br /> can gain by it? Contact US and book a FREE consultation Today!
             </p>
+             <Link to="/register">
             <Button subject="Want to  study in UK? Get FREE counselling" />
+            </Link>
+            
           </div>
         </div>
         <div className="flex flex-col gap-3">
@@ -256,4 +265,4 @@ Then click to discover more about the Best Courses to Study in the UK for Inte
   );
 }
 
-export default unitedKingdom;
+export default UnitedKingdom;

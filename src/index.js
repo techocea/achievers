@@ -17,6 +17,7 @@ import {
 } from "././Imports";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Destinations from "./pages/Destinations/Destinations";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,6 +27,7 @@ root.render(
       <Route exact path="/" element={<App />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/study-destinations" element={<Destinations />} />
       <Route path="/financial" element={<Financial />} />
       <Route path="/register" element={<Register />} />
       <Route path="/usa" element={<Usa />} />

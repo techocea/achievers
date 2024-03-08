@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceData } from "../../data";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Map from "../../Map/Map";
+// import Map from "../../Map/Map";
 import { MdEmail, MdMeetingRoom } from "react-icons/md";
 import { PiPhoneCallFill } from "react-icons/pi";
 import Button from "../../button/Button";
 
 function Services() {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="h-full  px-20 lg:px-52">
       <div className="flex flex-col items-center justify-center">
@@ -85,18 +88,20 @@ function Services() {
           </div>
           {/* google map */}
           <div style={{ width: "100%", height: "100%" }}>
-            <Map />
+            
             {/* <Map
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyA_CWDygVZ4mJ-fAbvdgZcjakatLHEB-Wk&v=3.exp&libraries=geometry,drawing,places`}
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}
               isMarkerShown
-            /> */}
+            />  */}
           </div>
         </div>
         <div className="mt-3">
+         <Link to="register">
           <Button subject="Contact Now" />
+         </Link>
         </div>
       </div>
     </div>

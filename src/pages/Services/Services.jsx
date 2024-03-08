@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import serv from "../../assets/services.jpg";
 import { ServiceData } from "../../data";
 
 const Services = () => {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="h-[500px] relative max-md:w-full ">

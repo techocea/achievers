@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { UKBenefits } from "../../data";
 import Button from "../../button/Button";
 import ContactMessage from "../../contactMessage/contactMessage";
 import canCover from "../../assets/covers/canCover.jpg"
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
-function canada() {
+function Canada() {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const tableData1 = [
     {
       id: "1",
@@ -69,12 +72,21 @@ function canada() {
           <h2 className=" text-white font-bold text-5xl max-md:text-3xl">Your <span className="text-[#1F0259]">dream</span> of studying in <span className="text-[#1F0259]">Canada</span>  is closer than you think!</h2>
           <p className="text-white text-lg font-medium">Learn everything you need to know about studying in Canada and get end to end expert guidance from us.</p>
           <div>
+            <Link to="/register">
             <Button subject="Get Started For FREE" />
+            </Link>
           </div>
         </div>
       </div>
       <div className="w-full">
-        <nav className="max-md:overflow-x-auto justify-between w-full bg-white max-md:bg-fixed flex px-4 py-4 space-x-4 shadow-lg">
+        <nav className="bg-white flex list-none items-center justify-between font-semibold px-12 py-4 w-full shadow-lg shadow-white">
+        <li>Why Study In UK?</li>
+        <li>Benefits</li>
+        <li>Courses</li>
+        <li>Cost</li>
+        <li>Requirements</li>
+      </nav>
+        {/* <nav className="max-md:overflow-x-auto justify-between w-full bg-white max-md:bg-fixed flex px-4 py-4 space-x-4 shadow-lg">
           <ul className=" flex list-none gap-4 items-center">
             <li className="whitespace-nowrap">
               <Link activeClass="active"
@@ -97,7 +109,7 @@ function canada() {
               <Link to="/requirements">Requirements</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
       {/* Why Study In Canada? */}
       <section className="m-12 max-md:m-8 flex flex-col gap-4">
@@ -156,7 +168,9 @@ function canada() {
             <p className="italic text-center text-[#1F0259] text-sm">
               Need to learn more about Applying to Study in CANADA and all the benefits that you<br /> can gain by it? Contact US and book a FREE consultation Today!
             </p>
+            <Link to="/register">
             <Button subject="Want to study in Canada? Get FREE counselling" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-3">
@@ -244,4 +258,4 @@ Then click to discover more about the Best Courses to Study in the Canada for 
   );
 }
 
-export default canada;
+export default Canada;

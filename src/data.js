@@ -1,8 +1,5 @@
-import ireland from "././assets/ireland-1.jpg";
-
 //home page images`s links
 import Australia from "././assets/australia.jpg";
-import Ireland from "././assets/ireland-1.jpg";
 import Italy from "././assets/italy.jpg";
 import Aflag from "././assets/ausi-flag.jpg";
 import Cflag from "././assets/canada-flag.jpg";
@@ -24,6 +21,9 @@ import { BiSolidPlane } from "react-icons/bi";
 import { MdOutlineAirplaneTicket } from "react-icons/md";
 import { FaCarSide } from "react-icons/fa";
 import { ImHome } from "react-icons/im";
+import { FaUserFriends } from "react-icons/fa";
+import { BsBank } from "react-icons/bs";
+import { FaUserGraduate } from "react-icons/fa";
 
 import guidance from "././assets/guidance.jpg";
 import visa from "././assets/visa.jpg";
@@ -40,7 +40,7 @@ export {
   Australia,
   Italy,
   Itflag,
-  Ireland,
+ 
   Aflag,
   Cflag,
   Ukflag,
@@ -49,34 +49,49 @@ export {
 };
 export const Countries = [
   {
-    id: 1,
-    imageUrl: ireland,
-    heading: "Why Study In Ireland",
-    country: "Ireland",
-    details:
-      "is an island nation situated on the west most edge of Europe.It is regarded as the continents second largest island after Great Britain.Ireland carries a uniqueness of its lush green fields and beautiful naturalistic sceneries.An interesting fact of Ireland that not many are aware of is that around 15000 years ago After students graduates they are eligible to apply for a work visa",
-    advantage: "The Irish Advantage",
-    advantageLists: [
-      {
-        title: "Education System",
-        description:
-          "The Irish education is ranked among the top 5% of universities in the world.They focus mainly on innovation, research & amp; entrepreneurship.All educational institutes are closely monitored by the Irish government though the National Framework of Qualification to ensure the quality of education is maintained.Universities take a lot of care and effort to tailor the programs they offer according to the careers that students want to peruse.",
-      },
-      {
-        title: "Relatively Low Fee",
-        description:
-          " According to the Higher Education Authority (HEA) 11% of students in Irish Universities are from different countries around the world.The cost of living and accommodation is relatively low when compared to the United Kingdom.",
-      },
-      {
-        title: "Post–Study Visa Option",
-        description:
-          "Students who graduate from any Irish University is eligible to apply for a post- study visa under the Third - Level, Graduate Scheme.Once the permit I granted students will be allowed to work and live in Ireland.",
-      },
-    ],
-  },
+  id: 1, 
+ 
+  heading: 'Why Study In Ireland',
+  country: 'Ireland',
+  details:
+    'In recent years, Ireland has become an increasingly popular destination for international students, offering high-quality education and a variety of academic options. The country is home to prestigious universities, not only in Europe but around the world. Here is a comprehensive guide for you to consider when contemplating studying in Ireland.',
+  advantage: 'Top Reasons to Study in Ireland',
+  advantageLists: [
+    {
+      title:
+        'Here are some of the main reasons for international students to study in Ireland:',
+      title1: 'Best Courses to Study in Ireland:',
+      title2: 'Top Universities in Ireland:',
+      description:
+        'Ireland is widely known for being an education hub of Europe and is home to impressive universities which feature in various global rankings.',
+      points: [
+        'The colleges and universities in Ireland conduct their classes, programs, and courses in English, allowing international students to study comfortably.',
+        'Ireland is renowned for its friendly culture, rich history, and beautiful landscapes, providing a delightful experience for students during their studies.',
+        'The country has a strong focus on research and development, fostering a conducive environment for scientific advancements.',
+      ],
+      courses: [
+        'Study Business in Ireland',
+        'Study Computer Science in Ireland',
+        'Study Medicine in Ireland',
+        'Study Arts and Humanities in Ireland',
+        'Study Law in Ireland',
+        'Study Engineering in Ireland',
+        'Study Environmental Science in Ireland',
+      ],
+      universities: [
+        'University College Dublin (UCD)',
+        'Trinity College Dublin',
+        'University of Limerick (UL)',
+        'National University of Ireland, Galway (NUIG)',
+        // Add more universities as needed
+      ],
+    },
+  ],
+},
+
   {
     id: 2,
-    imageUrl: Italy,
+   
     heading: "Why Study In Italy",
     country: "Italy",
     details:
@@ -152,16 +167,19 @@ export const Finances = {
   additionalArray: [
     {
       topic: "Commitment to Education",
+      icon:FaUserGraduate,
       description:
         "We understand the importance of education in shaping your future. Our student loan options reflect our dedication to supporting students in their academic endeavors.",
     },
     {
       topic: "Transparent Banking",
+      icon:BsBank,
       description:
         "Our team is committed to providing personalized support throughout your financial journey. Whether you have questions about student loans or need assistance with online banking, we're here to help.",
     },
     {
       topic: "Personalized Support",
+      icon:FaUserFriends,
       description:
         "Our team is committed to providing personalized support throughout your financial journey. Whether you have questions about student loans or need assistance with online banking, we're here to help.",
     },

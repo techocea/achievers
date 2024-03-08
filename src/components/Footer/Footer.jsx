@@ -107,7 +107,7 @@ const Footer = () => {
       </div>
       <div className="text-center">
         <p className="py-10 lg:text-xl">
-          &copy;&nbsp;All rights reserved&nbsp;@Negombo Smart Achievers-2023 |
+          &copy;&nbsp;All rights reserved&nbsp;@Negombo Smart Achievers-2024 |
           Designed & Developed by&nbsp;
           <a href="https://web.facebook.com/profile.php?id=61550819112955">
             <span className="hover:text-[#59D3EE] duration-100 ease-in">

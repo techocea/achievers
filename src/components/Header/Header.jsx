@@ -28,7 +28,7 @@ const Header = () => {
     {
       id: 4,
       name: "Study Destinations",
-      path: '/'
+      path: '/study-destinations'
     },
     {
       id: 5,
@@ -37,32 +37,32 @@ const Header = () => {
     },
     {
       id: 6,
-      name: "Contact Us",
-      path: '/contact'
+      name: "Apply Now",
+      path: '/register'
     },
   ]
 
   return (
     <>
-      <nav className="flex items-center justify-between py-1 px-7 max-md:px-4 bg-white z-[-2]">
+      <nav className="flex items-center justify-between py-1 px-7 max-md:px-4 bg-white z-[-2] lg:px-32">
         <div className="flex items-center gap-2 max-md:gap-2 lg:py-5">
           <Link to="/">
             <img src={logo} alt="" className="w-[60px] max-md:w-[60px]" />
           </Link>
           <div className="flex flex-col max-md:hidden">
-            <h1 className="title text-xl max-md:text-[12px] lg:text-3xl max-md:w-[200px] tracking-wide max-md:tracking-normal text-black">
+            <h1 className="title text-xl max-md:text-[12px] lg:text-2xl max-md:w-[200px] tracking-wide max-md:tracking-normal text-black">
               NEGOMBO SMART ACHIEVERS
             </h1>
-            <p className="footer-p text-black/60 tracking-[4px] max-md:tracking-normal lg:tracking-[5px] text-[12px] lg:text-[22px] max-md:text-[14px]">
+            <p className="footer-p text-black/60 tracking-[4px] max-md:tracking-normal lg:tracking-[5px] text-[12px] lg:text-lg max-md:text-[14px]">
               "Education with an excellence"
             </p>
           </div>
         </div>
         <div className="flex ">
-          <ul className="md:flex gap-8 hidden">
+          <ul className="md:flex gap-8 px-1 hidden">
             {Menu.map((item, index) => (
               <Link to={item.path}>
-                <li className="hover:text-[#1F0259] hover:font-bold cursor-pointer hover:scale-105 transition-all ease-in-out">
+                <li className="hover:text-[#1F0259] font-medium cursor-pointer  transition-all ease-in">
                   {item.name}
                 </li>
               </Link>
@@ -107,11 +107,11 @@ const Header = () => {
                 Financial
               </Link>
               <Link
-                to="/contact"
+                to="/register"
                 pl-4
                 className="bg-[#000080] w-full py-6 font-normal text-[18px] my-5 text-white text-center"
               >
-                Contact Us
+                Apply Now
               </Link>
             </div>
           </div>

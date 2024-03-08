@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AustraliaBenefits } from "../../data";
 import Button from "../../button/Button";
 import ContactMessage from "../../contactMessage/contactMessage";
 import ausCover from "../../assets/covers/ausCover.png"
+import { Link } from "react-router-dom";
 
 function Australia() {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const tableData1 = [
     {
       id: "1",
@@ -68,7 +72,9 @@ function Australia() {
           <h2 className=" text-white font-bold text-5xl">Your <span className="text-[#1F0259]">dream</span> of studying in <span className="text-[#1F0259]">Australia</span>  is closer than you think!</h2>
           <p className="text-white text-lg font-medium">Learn everything you need to know about studying in Austraila and get end to end expert guidance from us.</p>
           <div>
+            <Link to="/register">
             <Button subject="Get Started For FREE" />
+            </Link>
           </div>
         </div>
       </div>
@@ -135,7 +141,10 @@ function Australia() {
             <p className="italic text-center text-[#1F0259] text-sm">
               Need to learn more about Applying to Study in AUSTRALIA and all the benefits that you<br /> can gain by it? Contact NSA and book a FREE consultation Today
             </p>
+            <Link to="/register">
             <Button subject="Want to study in Australia? Get FREE counselling" />
+            </Link>
+            
           </div>
         </div>
         <div className="flex flex-col gap-3">
