@@ -9,7 +9,7 @@ import Button from "../../button/Button";
 
 function Services() {
   return (
-    <div className="h-auto px-20 lg:px-52">
+    <div className="h-full  px-20 lg:px-52">
       <div className="flex flex-col items-center justify-center">
         <div className="text-center mb-5">
           <h3 className="text-[#1F0259]  text-2xl  font-bold">
@@ -43,7 +43,7 @@ function Services() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col px-auto py-20 items-center justify-center">
+      <div className="flex flex-col gap-y-3 px-auto py-20 items-center justify-center">
         <div className="text-center mb-2">
           <h3 className="text-[#1F0259]  text-2xl  font-bold">CONTACT</h3>
           <p className="text-[#8D8D8D]">We`d like to hear from you...`</p>
@@ -84,14 +84,15 @@ function Services() {
             </div>
           </div>
           {/* google map */}
-          <div style={{ width: "50vw", height: "50vh" }}>
-            <Map
+          <div style={{ width: "100%", height: "100%" }}>
+            <Map />
+            {/* <Map
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyA_CWDygVZ4mJ-fAbvdgZcjakatLHEB-Wk&v=3.exp&libraries=geometry,drawing,places`}
               loadingElement={<div style={{ height: "100%" }} />}
               containerElement={<div style={{ height: "100%" }} />}
               mapElement={<div style={{ height: "100%" }} />}
               isMarkerShown
-            />
+            /> */}
           </div>
         </div>
         <div className="mt-3">
