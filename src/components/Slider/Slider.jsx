@@ -7,7 +7,7 @@ import { Universities } from "../../data";
 
 const Carousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -41,7 +41,7 @@ const Carousel = () => {
             <img
               src={university.imageUrl}
               alt={university.name}
-              className="object-contain w-52 h-52"
+              className="object-contain w-52 h-32"
             />
           </div>
         ))}
