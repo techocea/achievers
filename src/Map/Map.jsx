@@ -1,50 +1,23 @@
-// import React from "react";
-// import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import React from "react";
 
-// const containerStyle = {
-//   width: "550px",
-//   height: "500px",
-// };
+function Map() {
+  return (
+    <div>
+      <div className="w-full">
+        <iframe
+          width="590"
+          height="500"
+          className="lg:w-[690px]"
+          frameborder="0"
+          scrolling="no"
+          title="Negombo Smart Achievers"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=No%2088/2%20Chillaw%20Road,Kattuwa,Negombo+(NEGOMBO%20SMART%20ACHIEVERS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </div>
+  );
+}
 
-// const center = {
-//   lat: 7.23656,
-//   lng: 79.848579,
-// };
-
-// function MyComponent() {
-//   const { isLoaded } = useJsApiLoader({
-//     id: "promptopia-398900",
-//     googleMapsApiKey: "AIzaSyA_CWDygVZ4mJ-fAbvdgZcjakatLHEB-Wk",
-//   });
-
-//   const [map, setMap] = React.useState();
-
-//   const onLoad = React.useCallback(function callback(map) {
-//     // This is just an example of getting and using the map instance!!! don't just blindly copy!
-//     const bounds = new window.google.maps.LatLngBounds(center);
-//     map.fitBounds(bounds);
-
-//     setMap(map);
-//   }, []);
-
-//   const onUnmount = React.useCallback(function callback() {
-//     setMap(null);
-//   }, []);
-
-//   return isLoaded ? (
-//     <GoogleMap
-//       mapContainerStyle={containerStyle}
-//       center={center}
-//       zoom={10}
-//       onLoad={onLoad}
-//       onUnmount={onUnmount}
-//     >
-//       {/* Child components, such as markers, info windows, etc. */}
-//       <></>
-//     </GoogleMap>
-//   ) : (
-//     <></>
-//   );
-// }
-
-// export default React.memo(MyComponent);
+export default Map;

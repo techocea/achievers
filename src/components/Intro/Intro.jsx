@@ -6,7 +6,9 @@ const Intro = () => {
     <div className="bg-white h-full lg:px-52 py-10 px-20">
       <div className="flex gap-12 lg:justify-between ">
         <div className="w-[580px] lg:w-[680px] flex flex-col gap-y-1 lg:gap-y-2">
-          <h6 className="uppercase font-bold text-sm text-[#46145e]">about</h6>
+          <h6 className="uppercase font-bold text-sm lg:text-[16px] text-[#46145e]">
+            about
+          </h6>
           <h1 className="font-medium text-2xl lg:text-3xl text-[#000080]">
             Negombo Smart Achievers
           </h1>
@@ -20,7 +22,7 @@ const Intro = () => {
           </p>
           <Link
             to="/about"
-            className="flex gap-x-1.5 items-center text-red-500 font-medium underline"
+            className="flex gap-x-1.5 lg:text-lg items-center text-red-500 font-medium underline"
           >
             Read More <FaArrowRight />
           </Link>

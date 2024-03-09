@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
+.env
             <input id="name" name="name" type="text" placeholder="Name" className="max-md:col-span-full col-span-2" required />
             <ValidationError
               prefix="Name"

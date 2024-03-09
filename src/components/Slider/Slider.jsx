@@ -31,12 +31,12 @@ const Carousel = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden lg:px-52">
       <Slider {...settings}>
         {Universities.map((university) => (
           <div
             key={university.id}
-            className="mx-20 flex justify-center items-center"
+            className="px-20 flex justify-center items-center"
           >
             <img
               src={university.imageUrl}
