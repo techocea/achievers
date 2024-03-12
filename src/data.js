@@ -40,7 +40,6 @@ export {
   Australia,
   Italy,
   Itflag,
- 
   Aflag,
   Cflag,
   Ukflag,
@@ -49,49 +48,49 @@ export {
 };
 export const Countries = [
   {
-  id: 1, 
- 
-  heading: 'Why Study In Ireland',
-  country: 'Ireland',
-  details:
-    'In recent years, Ireland has become an increasingly popular destination for international students, offering high-quality education and a variety of academic options. The country is home to prestigious universities, not only in Europe but around the world. Here is a comprehensive guide for you to consider when contemplating studying in Ireland.',
-  advantage: 'Top Reasons to Study in Ireland',
-  advantageLists: [
-    {
-      title:
-        'Here are some of the main reasons for international students to study in Ireland:',
-      title1: 'Best Courses to Study in Ireland:',
-      title2: 'Top Universities in Ireland:',
-      description:
-        'Ireland is widely known for being an education hub of Europe and is home to impressive universities which feature in various global rankings.',
-      points: [
-        'The colleges and universities in Ireland conduct their classes, programs, and courses in English, allowing international students to study comfortably.',
-        'Ireland is renowned for its friendly culture, rich history, and beautiful landscapes, providing a delightful experience for students during their studies.',
-        'The country has a strong focus on research and development, fostering a conducive environment for scientific advancements.',
-      ],
-      courses: [
-        'Study Business in Ireland',
-        'Study Computer Science in Ireland',
-        'Study Medicine in Ireland',
-        'Study Arts and Humanities in Ireland',
-        'Study Law in Ireland',
-        'Study Engineering in Ireland',
-        'Study Environmental Science in Ireland',
-      ],
-      universities: [
-        'University College Dublin (UCD)',
-        'Trinity College Dublin',
-        'University of Limerick (UL)',
-        'National University of Ireland, Galway (NUIG)',
-        // Add more universities as needed
-      ],
-    },
-  ],
-},
+    id: 1,
+
+    heading: "Why Study In Ireland",
+    country: "Ireland",
+    details:
+      "In recent years, Ireland has become an increasingly popular destination for international students, offering high-quality education and a variety of academic options. The country is home to prestigious universities, not only in Europe but around the world. Here is a comprehensive guide for you to consider when contemplating studying in Ireland.",
+    advantage: "Top Reasons to Study in Ireland",
+    advantageLists: [
+      {
+        title:
+          "Here are some of the main reasons for international students to study in Ireland:",
+        title1: "Best Courses to Study in Ireland:",
+        title2: "Top Universities in Ireland:",
+        description:
+          "Ireland is widely known for being an education hub of Europe and is home to impressive universities which feature in various global rankings.",
+        points: [
+          "The colleges and universities in Ireland conduct their classes, programs, and courses in English, allowing international students to study comfortably.",
+          "Ireland is renowned for its friendly culture, rich history, and beautiful landscapes, providing a delightful experience for students during their studies.",
+          "The country has a strong focus on research and development, fostering a conducive environment for scientific advancements.",
+        ],
+        courses: [
+          "Study Business in Ireland",
+          "Study Computer Science in Ireland",
+          "Study Medicine in Ireland",
+          "Study Arts and Humanities in Ireland",
+          "Study Law in Ireland",
+          "Study Engineering in Ireland",
+          "Study Environmental Science in Ireland",
+        ],
+        universities: [
+          "University College Dublin (UCD)",
+          "Trinity College Dublin",
+          "University of Limerick (UL)",
+          "National University of Ireland, Galway (NUIG)",
+          // Add more universities as needed
+        ],
+      },
+    ],
+  },
 
   {
     id: 2,
-   
+
     heading: "Why Study In Italy",
     country: "Italy",
     details:
@@ -167,19 +166,19 @@ export const Finances = {
   additionalArray: [
     {
       topic: "Commitment to Education",
-      icon:FaUserGraduate,
+      icon: FaUserGraduate,
       description:
         "We understand the importance of education in shaping your future. Our student loan options reflect our dedication to supporting students in their academic endeavors.",
     },
     {
       topic: "Transparent Banking",
-      icon:BsBank,
+      icon: BsBank,
       description:
         "Our team is committed to providing personalized support throughout your financial journey. Whether you have questions about student loans or need assistance with online banking, we're here to help.",
     },
     {
       topic: "Personalized Support",
-      icon:FaUserFriends,
+      icon: FaUserFriends,
       description:
         "Our team is committed to providing personalized support throughout your financial journey. Whether you have questions about student loans or need assistance with online banking, we're here to help.",
     },
@@ -278,13 +277,13 @@ export const USABenefits = [
     id: 4,
     point: "Internship and work opportunities",
     answer:
-      "The UK offers excellent opportunities for internships, work placements, and part-time jobs during studies. This provides students with practical experience, enhancing their employability upon graduation.",
+      "The USA offers excellent opportunities for internships, work placements, and part-time jobs during studies. This provides students with practical experience, enhancing their employability upon graduation.",
   },
   {
     id: 5,
     point: "Support for International Students",
     answer:
-      " As English is the primary language of instruction, studying in the UK can significantly improve your English language skills. This is advantageous for future employment and communication in an increasingly globalized world.",
+      " As English is the primary language of instruction, studying in the USA can significantly improve your English language skills. This is advantageous for future employment and communication in an increasingly globalized world.",
   },
   {
     id: 6,
@@ -310,25 +309,25 @@ export const CanadaBenefits = [
     id: 3,
     point: "Cultural Exchange",
     answer:
-      "Beyond the confines of textbooks and lecture halls, studying in the USA offers a chance to engage in cultural exchange firsthand. From events celebrating global diversity to student clubs representing various traditions, international students find ample avenues to share their heritage while embracing new ones",
+      "Beyond the confines of textbooks and lecture halls, studying in the Canada offers a chance to engage in cultural exchange firsthand. From events celebrating global diversity to student clubs representing various traditions, international students find ample avenues to share their heritage while embracing new ones",
   },
   {
     id: 4,
     point: "Internship and work opportunities",
     answer:
-      "The UK offers excellent opportunities for internships, work placements, and part-time jobs during studies. This provides students with practical experience, enhancing their employability upon graduation.",
+      "The Canada offers excellent opportunities for internships, work placements, and part-time jobs during studies. This provides students with practical experience, enhancing their employability upon graduation.",
   },
   {
     id: 5,
     point: "Support for International Students",
     answer:
-      " As English is the primary language of instruction, studying in the UK can significantly improve your English language skills. This is advantageous for future employment and communication in an increasingly globalized world.",
+      " As English is the primary language of instruction, studying in the Canada can significantly improve your English language skills. This is advantageous for future employment and communication in an increasingly globalized world.",
   },
   {
     id: 6,
     point: "Internship and work opportunities",
     answer:
-      "American institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the USA offer a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
+      "Canadian institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the Canada offer a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
   },
 ];
 export const AustraliaBenefits = [
@@ -366,7 +365,7 @@ export const AustraliaBenefits = [
     id: 6,
     point: "Internship and work opportunities",
     answer:
-      "American institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the USA offer a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
+      "Australian institutions recognise the unique challenges that international students face when studying abroad. To ensure a seamless transition and holistic growth, universities in the Australia a comprehensive network of support services. From tailored orientation programs to specialised career guidance, these services pave the way for a successful academic and personal journey.",
   },
 ];
 export const ServiceData = [

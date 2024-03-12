@@ -6,11 +6,18 @@ import Map from "../../Map/Map";
 import { MdEmail, MdMeetingRoom } from "react-icons/md";
 import { PiPhoneCallFill } from "react-icons/pi";
 import Button from "../../button/Button";
+import {
+  FaFacebookSquare,
+  FaWhatsapp,
+  FaFacebookMessenger,
+} from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 function Services() {
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  // //   window.scrollTo(0, 0);
+  // // }, []);
   return (
     <div className="h-full  px-20 lg:px-52">
       <div className="flex flex-col items-center justify-center">
@@ -52,34 +59,44 @@ function Services() {
           <p className="text-[#8D8D8D]">We`d like to hear from you...`</p>
         </div>
         <div className="flex items-center justify-center ">
-          <div className="bg-[#1F0259]  w-auto h-full p-4 shadow-lg text-white shadow-slate-200">
-            <h1 className="capitalize text-5xl font-bold text-slate-500 border-b pb-2">
-              Get in Touch
+          {/* social icons */}
+          <div className="bg-[#1F0259] text-white w-20 h-[490px] flex flex-col gap-y-[2rem] items-center justify-center">
+            <FaFacebookSquare />
+            <FaFacebookMessenger />
+            <BsInstagram />
+            <FaWhatsapp />
+            <FaLinkedin />
+          </div>
+          {/* Get In Touch */}
+          <div className="bg-white w-auto h-full p-4 shadow-lg text-gray-700 shadow-slate-200 rounded-lg">
+            <h1 className="capitalize text-7xl font-bold leading-[6rem] lg:leading-[8rem] text-slate-500 border-b pb-2">
+              Get in <br />
+              Touch
             </h1>
-            <div className="flex flex-col gap-y-3 py-2">
-              <div className="flex items-center gap-x-2">
-                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-red-500">
+            <div className="flex flex-col gap-y-[3rem] py-2">
+              <div className="flex items-center gap-x-4 mt-[3rem]">
+                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-gray-700">
                   <MdMeetingRoom size={32} />
                 </p>
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-2.5">
                   <h4>Meet Us</h4>
                   <p>Negombo,Sri Lanka</p>
                 </div>
               </div>
-              <div className="flex items-center gap-x-2">
-                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-red-500">
+              <div className="flex items-center gap-x-4">
+                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-gray-700">
                   <PiPhoneCallFill size={32} />
                 </p>
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-2.5">
                   <h4>Call Us</h4>
                   <p>(076) 148 6266</p>
                 </div>
               </div>
-              <div className="flex items-center gap-x-2">
-                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-red-500">
+              <div className="flex items-center gap-x-4">
+                <p className="w-10 h-10 rounded-full flex items-center justify-center text-white bg-gray-700">
                   <MdEmail size={32} />
                 </p>
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-2.5">
                   <h4>Email Us</h4>
                   <p>info@negombosmartachievers.lk</p>
                 </div>
@@ -87,14 +104,14 @@ function Services() {
             </div>
           </div>
           {/* google map */}
-          <div >
-            <Map/>
+          <div>
+            <Map />
           </div>
         </div>
         <div className="mt-3">
-         <Link to="register">
-          <Button subject="Contact Now" />
-         </Link>
+          <Link to="register">
+            <Button subject="Contact Now" />
+          </Link>
         </div>
       </div>
     </div>

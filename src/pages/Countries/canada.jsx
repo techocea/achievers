@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import { UKBenefits } from "../../data";
+import { CanadaBenefits } from "../../data";
 import Button from "../../button/Button";
 import ContactMessage from "../../contactMessage/contactMessage";
-import canCover from "../../assets/covers/canCover.jpg"
+import canCover from "../../assets/covers/canCover.jpg";
 import { Link } from "react-router-dom";
 
 function Canada() {
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const tableData1 = [
     {
       id: "1",
       point: "Language spoken",
-      answer: "English",
+      answer: "English and French",
     },
     {
       id: "2",
@@ -38,7 +38,7 @@ function Canada() {
     {
       id: "6",
       point: "Intakes",
-      answer: "Fall and Spring",
+      answer: "Fall,Spring and Summer",
     },
   ];
   const tableData2 = [
@@ -54,10 +54,9 @@ function Canada() {
     },
     {
       id: "3",
-      point: "PhD",
+      point: "PGDE",
       answer: "CAD 8,000 to CAD 20,000",
     },
-
   ];
 
   return (
@@ -65,27 +64,38 @@ function Canada() {
       {/* covers */}
       <div className="relative">
         <div className="h-full">
-          <img src={canCover} alt="canCover" className="w-full h-[60vh] object-cover" />
+          <img
+            src={canCover}
+            alt="canCover"
+            className="w-full h-[60vh] object-cover"
+          />
           <div className="absolute inset-0 bg-[#1F0259] opacity-40"></div>
         </div>
         <div className="flex flex-col gap-4 absolute left-10 bottom-1/2 leading-[1.8] transform translate-y-1/2 w-1/2 max-md:w-auto max-md:right-10">
-          <h2 className=" text-white font-bold text-5xl max-md:text-3xl">Your <span className="text-[#1F0259]">dream</span> of studying in <span className="text-[#1F0259]">Canada</span>  is closer than you think!</h2>
-          <p className="text-white text-lg font-medium">Learn everything you need to know about studying in Canada and get end to end expert guidance from us.</p>
+          <h2 className=" text-white font-bold text-5xl max-md:text-3xl">
+            Your <span className="text-[#1F0259]">dream</span> of studying in{" "}
+            <span className="text-[#1F0259]">Canada</span> is closer than you
+            think!
+          </h2>
+          <p className="text-white text-lg font-medium">
+            Learn everything you need to know about studying in Canada and get
+            end to end expert guidance from us.
+          </p>
           <div>
             <Link to="/register">
-            <Button subject="Get Started For FREE" />
+              <Button subject="Get Started For FREE" />
             </Link>
           </div>
         </div>
       </div>
       <div className="w-full">
         <nav className="bg-white flex list-none items-center justify-between font-semibold px-12 py-4 w-full shadow-lg shadow-white">
-        <li>Why Study In UK?</li>
-        <li>Benefits</li>
-        <li>Courses</li>
-        <li>Cost</li>
-        <li>Requirements</li>
-      </nav>
+          <li>Why Study In Canada?</li>
+          <li>Benefits</li>
+          <li>Courses</li>
+          <li>Cost</li>
+          <li>Requirements</li>
+        </nav>
         {/* <nav className="max-md:overflow-x-auto justify-between w-full bg-white max-md:bg-fixed flex px-4 py-4 space-x-4 shadow-lg">
           <ul className=" flex list-none gap-4 items-center">
             <li className="whitespace-nowrap">
@@ -113,14 +123,19 @@ function Canada() {
       </div>
       {/* Why Study In Canada? */}
       <section className="m-12 max-md:m-8 flex flex-col gap-4">
-        <div
-          id="why-study-in-canada"
-          className="flex flex-col gap-3">
+        <div id="why-study-in-canada" className="flex flex-col gap-3">
           <h1 className="text-[#1F0259] font-bold text-2xl max-md:text-lg">
             Why Study In Canada?
           </h1>
           <p className="text-[#1F0259]">
-            When contemplating options for studying abroad, studying in Canada invariably emerges as a top choice. The allure of pursuing education in Canada is undeniable, making Studying abroad in Canada a coveted opportunity for many. The combination of diverse, cosmopolitan cities, breathtaking natural landscapes, and a myriad of prestigious educational institutions makes Study in Canada an enticing destination for international students looking to <span className="font-bold"> study abroad in Canada.</span>
+            When contemplating options for studying abroad, studying in Canada
+            invariably emerges as a top choice. The allure of pursuing education
+            in Canada is undeniable, making Studying abroad in Canada a coveted
+            opportunity for many. The combination of diverse, cosmopolitan
+            cities, breathtaking natural landscapes, and a myriad of prestigious
+            educational institutions makes Study in Canada an enticing
+            destination for international students looking to{" "}
+            <span className="font-bold"> study abroad in Canada.</span>
           </p>
         </div>
         <div className="flex items-start max-md:items-stretch">
@@ -139,8 +154,12 @@ function Canada() {
                     key={row.id}
                     className="flex gap-8 items-center border font-semibold rounded-md p-2"
                   >
-                    <td className="w-[350px] max-md:w-[100px] border-r-2 max-md:p-2">{row.point}</td>
-                    <td className="w-[550px] max-md:w-[150px] p-0">{row.answer}</td>
+                    <td className="w-[350px] max-md:w-[100px] border-r-2 max-md:p-2">
+                      {row.point}
+                    </td>
+                    <td className="w-[550px] max-md:w-[150px] p-0">
+                      {row.answer}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -152,24 +171,32 @@ function Canada() {
             Benefits of Studying in the Canada
           </h1>
           <p className="text-[#1F0259]">
-            Opting to The allure of Canada for international students isn't solely based on its scenic beauty or diverse culture, making it an ideal destination for those looking to study in Canada. The nation's education system stands out on the International stage, attracting students seeking scholarships to<span className="font-bold"> study in Canada</span>
+            Opting to The allure of Canada for international students isn't
+            solely based on its scenic beauty or diverse culture, making it an
+            ideal destination for those looking to study in Canada. The nation's
+            education system stands out on the International stage, attracting
+            students seeking scholarships to
+            <span className="font-bold"> study in Canada</span>
           </p>
           <div className="flex flex-col gap-y-3 max-md:gap-y-4">
-            {UKBenefits.map((benefit) => (
+            {CanadaBenefits.map((benefit) => (
               <ul className="list-disc ml-8">
                 <li key={benefit.id} className="text-[#1F0259]">
-                  <span className="font-bold">{benefit.point}</span>:
-                  &nbsp;{benefit.answer}
+                  <span className="font-bold">{benefit.point}</span>: &nbsp;
+                  {benefit.answer}
                 </li>
               </ul>
             ))}
           </div>
           <div className="flex flex-col gap-4 items-center my-3">
             <p className="italic text-center text-[#1F0259] text-sm">
-              Need to learn more about Applying to Study in CANADA and all the benefits that you<br /> can gain by it? Contact US and book a FREE consultation Today!
+              Need to learn more about Applying to Study in CANADA and all the
+              benefits that you
+              <br /> can gain by it? Contact US and book a FREE consultation
+              Today!
             </p>
             <Link to="/register">
-            <Button subject="Want to study in Canada? Get FREE counselling" />
+              <Button subject="Want to study in Canada? Get FREE counselling" />
             </Link>
           </div>
         </div>
@@ -178,7 +205,10 @@ function Canada() {
             Popular Courses to Study in the Canada
           </h1>
           <p className="text-[#1F0259]">
-            In the dynamic landscape of International education, the option to study in Canada has emerged as a beacon of innovation and excellence, offering a wide array of popular courses that cater to the evolving needs of today's world.
+            In the dynamic landscape of International education, the option to
+            study in Canada has emerged as a beacon of innovation and
+            excellence, offering a wide array of popular courses that cater to
+            the evolving needs of today's world.
           </p>
           <div className="flex max-md:flex-col items-center max-md:items-start flex-1 max-md:gap-6">
             <ul className="text-[#1F0259] list-disc ml-8 font-bold">
@@ -202,7 +232,11 @@ Then click to discover more about the Best Courses to Study in the Canada for 
             Cost of Studying in the Canada for International Students
           </h1>
           <p className="text-[#1F0259]">
-            Understanding the cost of studying in Canada for international students becomes a pivotal step in making informed decisions. From tuition fees to living expenses, the comprehensive cost of studying in Canada encompasses various aspects that collectively shape the overall investment in education.
+            Understanding the cost of studying in Canada for international
+            students becomes a pivotal step in making informed decisions. From
+            tuition fees to living expenses, the comprehensive cost of studying
+            in Canada encompasses various aspects that collectively shape the
+            overall investment in education.
           </p>
           <div className="my-4">
             <div>
@@ -213,7 +247,8 @@ Then click to discover more about the Best Courses to Study in the Canada for 
                       Level of Education
                     </th>
                     <th className="text-[#1F0259] font-semibold p-2 max-md:w-[150px]">
-                      Costs for International Students in CAD (Per year) (approx.)
+                      Costs for International Students in CAD (Per year)
+                      (approx.)
                     </th>
                   </tr>
                 </thead>
@@ -223,15 +258,19 @@ Then click to discover more about the Best Courses to Study in the Canada for 
                       key={row.id}
                       className="flex gap-8 items-center border font-semibold rounded-md "
                     >
-                      <td className="w-[350px] max-md:w-[150px] border-r-2 max-md:p-2">{row.point}</td>
-                      <td className="max-md:w-[120px] max-md:p-0">{row.answer}</td>
+                      <td className="w-[350px] max-md:w-[150px] border-r-2 max-md:p-2">
+                        {row.point}
+                      </td>
+                      <td className="max-md:w-[120px] max-md:p-0">
+                        {row.answer}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-            </div >
-          </div >
-        </div >
+            </div>
+          </div>
+        </div>
         <div className="flex flex-col gap-3">
           <h1 className="text-[#1F0259] font-bold text-2xl">
             Documents Required to Study in the Canada for International Students
@@ -253,8 +292,8 @@ Then click to discover more about the Best Courses to Study in the Canada for 
             </div>
           </div>
         </div>
-      </section >
-    </div >
+      </section>
+    </div>
   );
 }
 

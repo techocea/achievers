@@ -6,7 +6,7 @@ function Map() {
       <div className="w-full">
         <iframe
           width="590"
-          height="500"
+          height="450"
           className="lg:w-[690px]"
           frameborder="0"
           scrolling="no"

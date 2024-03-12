@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiBars3 } from "react-icons/hi2";
 import { TiTimes } from "react-icons/ti";
 
 const Header = () => {
+  const pathname = useLocation();
   const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
@@ -13,34 +14,34 @@ const Header = () => {
     {
       id: 1,
       name: "Home",
-      path: '/'
+      path: "/",
     },
     {
       id: 2,
       name: "About",
-      path: '/about'
+      path: "/about",
     },
     {
       id: 3,
       name: "Services",
-      path: '/services'
+      path: "/services",
     },
     {
       id: 4,
       name: "Study Destinations",
-      path: '/study-destinations'
+      path: "/study-destinations",
     },
     {
       id: 5,
       name: "Financial",
-      path: '/financial'
+      path: "/financial",
     },
     {
       id: 6,
       name: "Apply Now",
-      path: '/register'
+      path: "/register",
     },
-  ]
+  ];
 
   return (
     <>
@@ -62,7 +63,11 @@ const Header = () => {
           <ul className="md:flex gap-8 px-1 hidden">
             {Menu.map((item, index) => (
               <Link to={item.path}>
-                <li className="hover:text-[#1F0259] font-medium cursor-pointer  transition-all ease-in">
+                <li
+                  className={` hover:text-[#000080] font-medium cursor-pointer  transition-all ease-in ${
+                    item.path === pathname ? "text-red-500" : "text-[#46145e] "
+                  }`}
+                >
                   {item.name}
                 </li>
               </Link>
@@ -76,10 +81,11 @@ const Header = () => {
             <HiBars3 size={45} className="text-white" />
           )}
           <div
-            className={`${!nav
-              ? "bg-black fixed z-[16] h-full left-0 top-0 w-[67%] ease-in duration-500"
-              : "fixed left-[-100%]  "
-              }`}
+            className={`${
+              !nav
+                ? "bg-black fixed z-[16] h-full left-0 top-0 w-[67%] ease-in duration-500"
+                : "fixed left-[-100%]  "
+            }`}
           >
             <div className="flex flex-col items-center h-auto justify-center  md:hidden ">
               <Link

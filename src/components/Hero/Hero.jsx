@@ -4,9 +4,9 @@ import Button from "../../button/Button";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  //  useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <>
       <div className="w-full h-[500px] relative">
@@ -17,20 +17,20 @@ const Hero = () => {
                 Here's your chance to study in the top countries in the world
               </h4>
               <div className="flex gap-3">
-              <Link to="/register">
-              <Button subject="Australia" />
-              </Link>        
-              <Link to="/register">
-               <Button subject="USA" />
-              </Link>        
-              <Link to="/register">
-              <Button subject="Canada" />
-              </Link>        
-              <Link to="/register">
-              <Button subject="UK" />
-              </Link>    
+                <Link to="/register">
+                  <Button subject="Australia" />
+                </Link>
+                <Link to="/register">
+                  <Button subject="USA" />
+                </Link>
+                <Link to="/register">
+                  <Button subject="Canada" />
+                </Link>
+                <Link to="/register">
+                  <Button subject="UK" />
+                </Link>
               </div>
-            </div> 
+            </div>
             <div className="w-[630px] ">
               <div className="relative">
                 <img src={homeBG} alt="homeBG" className="" />
