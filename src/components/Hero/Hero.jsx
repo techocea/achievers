@@ -4,9 +4,9 @@ import Button from "../../button/Button";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  //  useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="w-full h-[500px] relative">

@@ -15,9 +15,9 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
 function Services() {
-  // useEffect(() => {
-  // //   window.scrollTo(0, 0);
-  // // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="h-full  px-20 lg:px-52">
       <div className="flex flex-col items-center justify-center">
