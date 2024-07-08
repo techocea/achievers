@@ -1,0 +1,89 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.env
+            <input id="name" name="name" type="text" placeholder="Name" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Name"
+              field="name"
+              errors={state.errors}
+            />
+            <input id="email" name="email" type="email" placeholder="Email Address" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <input id="mobile" name="mobile" type="text" placeholder="Mobile No" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Mobile"
+              field="mobile"
+              errors={state.errors}
+            />
+            <input id="age" name="age" type="text" placeholder="Age" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Age"
+              field="age"
+              errors={state.errors}
+            />
+            <input id="migrated" name="migrated" type="text" placeholder="Migrated before?" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Migrated"
+              field="migrated"
+              errors={state.errors}
+            />
+            <input id="residence" name="residence" type="text" placeholder="Where do you live?" className="max-md:col-span-full col-span-2" required />
+            <ValidationError
+              prefix="Residence"
+              field="residence"
+              errors={state.errors}
+            />
+            <input id="completed" name="completed" type="text" placeholder="Course Completed" className="max-md:col-span-full" required />
+            <ValidationError
+              prefix="Completed"
+              field="completed"
+              errors={state.errors}
+            />
+            <input id="interested" name="interested" type="text" placeholder="Interested Course" className="max-md:col-span-full col-span-3" required />
+            <ValidationError
+              prefix="Interested"
+              field="interested"
+              errors={state.errors}
+            />
+            <input id="relations" name="relations" type="text" placeholder="Any relations  abroad?" className="col-span-full" required />
+            <ValidationError
+              prefix="Relations"
+              field="relations"
+              errors={state.errors}
+            />
+            <input id="message" name="message" type="text" placeholder="Message" className="col-span-4" required />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <div>
+              <button type="submit" disabled={state.submitting} className="bg-[#46145e] p-3 rounded-full text-white w-[150px]">Submit</button>
+            </div>
+          </div>

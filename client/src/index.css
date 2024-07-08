@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title,
+footer h1,
+.about h4,
+.usa h4,
+.footer-p {
+  font-family: "Crimson Text", serif;
+}
+
+.br h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 48px;
+  color: beige;
+}
+
+.span {
+  font-size: 46px;
+}
+
+.custom__border {
+  border-radius: 10px 10px 200px 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  @apply rounded-full py-2 px-3 outline-sky-800 border border-sky-500 min-w-[300px];
+}
+
+select {
+  @apply rounded-full py-2 px-3 outline-sky-800 border border-sky-500 min-w-[300px];
+}
+
+.form > div {
+  @apply w-[480px] justify-between;
+}
+
+@media not all and (min-width: 440px) {
+  .form > div {
+    @apply w-[30px];
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .br h2 {
+    font-family: "Crimson Text", serif;
+    font-size: 28px;
+    color: beige;
+  }
+}
+
+.section p {
+  font-family: "Sriracha", cursive;
+}
+
+.big p {
+  font-size: 22px;
+}
