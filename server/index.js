@@ -13,8 +13,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://achievers-server.vercel.app",
-      "https://achievers-server.vercel.app",
+      "https://achievers-server.vercel.app"
     ],
     methods: ["POST"],
     Credentials: true,
