@@ -8,23 +8,26 @@ const formRoutes = require("./routes/formRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-//middleware
+// Middleware
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(
   cors({
-    origin: [
-      "https://achievers-client.vercel.app"
-    ],
-    methods: ["POST"],
-    Credentials: true,
+    origin: "https://achievers-client.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 
-//connect to the database
+// Handle preflight requests
+app.options("*", cors());
+
+// Connect to the database
 connectToDB();
 
-//import routes
-
+// Import routes
 app.use("/api", formRoutes);
 
 app.get("/", (req, res) => {
@@ -34,3 +37,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on Port: ${PORT}`);
 });
+
