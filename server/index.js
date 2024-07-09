@@ -9,8 +9,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 //middleware
-app.use(cors());
 app.use(express.json());
+app.use(
+  cors({
+    origin: ["https://achievers-server.vercel.app", "http://localhost:5000"],
+    methods: ["POST"],
+    Credentials: true,
+  })
+);
 
 //connect to the database
 connectToDB();
