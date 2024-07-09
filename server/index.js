@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://achievers-server.vercel.app", "http://localhost:5000"],
+    origin: [
+      "https://achievers-server.vercel.app",
+      "https://achievers-server.vercel.app",
+    ],
     methods: ["POST"],
     Credentials: true,
   })
