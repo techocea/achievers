@@ -13,18 +13,11 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// CORS Configuration
-const corsOptions = {
-  origin: "https://achievers-client.vercel.app",
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  optionsSuccessStatus: 200, // Some legacy browsers choke on 204
-};
-
-app.use(cors(corsOptions));
-
-// Handle preflight requests for all routes
-app.options("*", cors(corsOptions));
+app.use(cors({
+        origin: "https://achievers-server.vercel.app"
+    }
+))
+app.options('*', cors())
 
 // Connect to the database
 connectToDB();
