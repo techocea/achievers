@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 //cors middleware
 const corsOptions = {
-  origin: "https://achievers-server.vercel.app", 
+  origin: 'https://negombosmartachievers.lk', 
   methods: 'GET,POST',
   allowedHeaders: 'Content-Type,Authorization',
   preflightContinue: false,
