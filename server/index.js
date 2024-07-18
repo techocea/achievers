@@ -14,7 +14,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //cors middleware
-app.use(cors());
+const corsOptions = {
+  origin: 'https://negombosmartachievers.lk',
+  methods: 'GET,POST',
+  allowedHeaders: 'Content-Type,Authorization',
+};
+
+app.use(cors(corsOptions));
 
 // Connect to the database
 connectToDB();
