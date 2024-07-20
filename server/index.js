@@ -14,19 +14,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //cors middleware
-app.use(cors(
-  {origin:"*"}
-));
-// const corsOptions = {
-//   origin: "https://negombosmartachievers.lk",
-//   methods: ["GET,POST"],
-//   allowedHeaders: "Content-Type,Authorization",
-//   preflightContinue: false,
-//   optionsSuccessStatus: 204,
-// };
+const corsOptions = {
+  origin: "https://achievers-client.vercel.app",
+  methods: ["GET,POST"],
+  allowedHeaders: "Content-Type,Authorization",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
 
-// app.use(cors(corsOptions));
-// app.options("*");
+app.use(cors(corsOptions));
 
 // Connect to the database
 connectToDB();
