@@ -44,7 +44,7 @@ export default function ContactForm() {
 
     try {
       const res = await fetch(
-        "https://achievers-server.vercel.app/api/register",
+        "/register",
         {
           method: "POST",
           headers: {
