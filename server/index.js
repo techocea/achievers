@@ -14,15 +14,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // CORS middleware
-const corsOptions = {
-  origin: 'https://achievers-client.vercel.app', // Your frontend domain
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Ensure all methods are allowed if needed
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-};
-
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: ["https://achievers-client.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 
 // Connect to the database
 connectToDB();
