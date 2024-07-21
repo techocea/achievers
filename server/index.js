@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // CORS middleware
 app.use(
   cors({
-    origin: ["https://achievers-client.vercel.app"],
+    origin: ["https://achievers-client.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true,
   })
