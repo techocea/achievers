@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // CORS middleware
 app.use(
   cors({
-    origin: ["https://achievers-client.vercel.app/"],
+    origin: ["https://www.negombosmartachievers.lk"],
     methods: ["POST", "GET"],
     credentials: true,
   })
