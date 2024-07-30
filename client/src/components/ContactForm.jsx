@@ -43,26 +43,25 @@ export default function ContactForm() {
     }
 
     try {
-      const res = await fetch("https://achievers-server.vercel.app/register",{
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch('http://localhost:5000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
 
-      const data = await res.json();
-      setFormData(data);
+      if (!response.ok) {
+        const errorText = await response.text(); // Get the response text for debugging
+        throw new Error(`Network response was not ok: ${response.status} - ${errorText}`);
+      }
 
-      toast.success("Form submitted successfully!");
-
-      setTimeout(() => {
-        window.location.href = "/register";
-      }, [5000]);
-    } catch (err) {
-      console.log(err);
-      toast.error("Error submitting form", err);
+      const data = await response.json();
+      console.log('Success:', data);
+      toast.success("Submitted")
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error("Error",error)
     }
   };
 

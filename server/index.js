@@ -1,9 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
-const connectToDB = require('./db/connectToDB');
-const formRoutes = require('./routes/formRoutes');
+const connectToDB = require("./db/connectToDB");
+const formRoutes = require("./routes/formRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -14,23 +14,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // CORS middleware
-app.use(
-  cors({
-    origin: ["https://www.negombosmartachievers.lk"],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Connect to the database
 connectToDB();
 
 // Import routes
-app.use('/api', formRoutes);
+app.use("/api", formRoutes);
 
-app.get('/', (req, res) => {
-  res.send('Hello Negombo Smart Achievers');
+app.get("/", (req, res) => {
+  res.send("Hello Negombo Smart Achievers");
 });
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on Port: ${PORT}`);

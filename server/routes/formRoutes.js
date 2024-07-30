@@ -17,9 +17,10 @@ router.post("/register", async (req, res) => {
       funds,
     });
     await newForm.save();
-    res.status(200).json(newForm);
+    res.status(201).json(newForm);
   } catch (error) {
     console.log("[FORM_SUBMISSION_POST]: ", error);
+    res.status(500).json({ message: "Internal server error" });
   }
 });
 
