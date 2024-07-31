@@ -13,31 +13,14 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Middleware to log the origin of incoming requests
-app.use((req, res, next) => {
-    const origin = req.headers.origin;
-    console.log(`Request received from origin: ${origin}`);
-    next();
-});
-
-// CORS Middleware
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://achievers-client.vercel.app'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+app.use(
+  cors({
+    origin: 'https://achievers-client.vercel.app',
+    methods: ['GET','HEAD','PATCH', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-}));
-
-// Manually set CORS headers for all responses
-app.use((req, res, next) => {
-    const allowedOrigins = ['http://localhost:3000', 'https://achievers-client.vercel.app'];
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-        res.setHeader('Access-Control-Allow-Origin', origin);
-    }
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    next();
-});
+    credentials:true,
+  })
+);
 
 // Connect to the database
 connectToDB();
