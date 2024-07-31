@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 connectToDB();
 
 // Import routes
-app.use("/api", formRoutes);
+app.use("/api/vi", formRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello Negombo Smart Achievers");
